@@ -11,26 +11,26 @@ import java.util.stream.Collectors;
 public class VendedorRepository {
 
 
-    Map<Integer, Vendedor> vendedorBD;
+    Map<Integer, Vendedor> vendedoresDB;
 
     public VendedorRepository (){
-        this.vendedorBD = new TreeMap<>();
+        this.vendedoresDB = new TreeMap<>();
     }
 
     public void salvar(Vendedor vendedor){
-        this.vendedorBD.put(vendedor.getId(), vendedor);
+        this.vendedoresDB.put(vendedor.getId(), vendedor);
     }
 
     public List<Vendedor> buscarTodos(){
-        return this.vendedorBD.values().stream().collect(Collectors.toList());
+        return this.vendedoresDB.values().stream().collect(Collectors.toList());
     }
 
     public Vendedor buscarPorId(Integer id){
-        return this.vendedorBD.get(id);
+        return this.vendedoresDB.get(id);
     }
 
     public void removePorId(Integer id){
-        this.vendedorBD.remove(id);
+        this.vendedoresDB.remove(id);
     }
     
 }

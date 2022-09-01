@@ -10,26 +10,26 @@ import java.util.stream.Collectors;
 public class AdministradorRepository {
 
 
-    Map<Integer, Administrador> administradorBD;
+    Map<Integer, Administrador> administradoresDB;
 
     public AdministradorRepository (){
-        this.administradorBD = new TreeMap<>();
+        this.administradoresDB = new TreeMap<>();
     }
 
     public void salvar(Administrador administrador){
-        this.administradorBD.put(administrador.getId(), administrador);
+        this.administradoresDB.put(administrador.getId(), administrador);
     }
 
     public List<Administrador> buscarTodos(){
-        return this.administradorBD.values().stream().collect(Collectors.toList());
+        return this.administradoresDB.values().stream().collect(Collectors.toList());
     }
 
     public Administrador buscarPorId(Integer id){
-        return this.administradorBD.get(id);
+        return this.administradoresDB.get(id);
     }
 
     public void removePorId(Integer id){
-        this.administradorBD.remove(id);
+        this.administradoresDB.remove(id);
     }
 
 

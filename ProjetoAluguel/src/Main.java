@@ -1,5 +1,19 @@
+import menu.Menu;
+import repository.AdministradorRepository;
+import repository.ClienteRepository;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Scanner sc = new Scanner(System.in);
+
+        AdministradorRepository admRepository = new AdministradorRepository();
+        ClienteRepository 
+
+
+        boolean continua = true;
+
+
     }
 }
