@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import menu.Menu;
 import repository.AdministradorRepository;
 import repository.ClienteRepository;
@@ -39,5 +40,10 @@ public class Main {
         }while (continua);
 
 
+=======
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+>>>>>>> parent of 54679e5 (Criado os menus)
     }
 }
